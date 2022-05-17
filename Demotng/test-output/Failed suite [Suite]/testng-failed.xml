@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="tests">
+  <parameter name="password" value="vijiaarthy"/>
+  <parameter name="login" value="parthiban"/>
+  <parameter name="username" value="aarthy10"/>
+  <test thread-count="2" name="Test1(failed)(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.ddemo.FlipKart">
+        <methods>
+          <include name="tc4" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- org.ddemo.FlipKart -->
+    </classes>
+  </test> <!-- Test1(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

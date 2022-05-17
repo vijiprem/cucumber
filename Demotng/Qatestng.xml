@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+  <parameter name="firstname" value="viji"></parameter>
+  <parameter name="lastname" value="prem"></parameter>
+  <parameter name="address" value="chennai"></parameter>
+  <parameter name="email" value="aarthy@gmail.com"></parameter>
+  <parameter name="mobile" value="7896584123"></parameter>
+  <parameter name="gender" value="female"></parameter>
+  <parameter name="hobby"  value="Movies"></parameter>
+ <parameter name="language" value="Bulgarian"></parameter>
+<parameter name="skill" value="C++"></parameter>
+<parameter name="Country" value="India"></parameter>
+<parameter name="Year" value="2015"></parameter>
+<parameter name="Month" value="December"></parameter>
+<parameter name="Date"  value="10"></parameter>
+<parameter name="password" value="vijiprem"></parameter>
+<parameter name="Cpassword" value="vijiprem"></parameter>
+  <test name="Test">
+    <classes>
+      <class name="org.ddemo.QatestngInput"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
