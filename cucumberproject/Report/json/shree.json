@@ -1,0 +1,136 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12555518300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "check login through chrome browser",
+            "match": {
+              "location": "Facebook.check_login_through_chrome_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-29T10:27:56.565Z",
+        "before": [
+          {
+            "result": {
+              "duration": 30800800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.befor()"
+            }
+          },
+          {
+            "result": {
+              "duration": 592200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "",
+        "description": "To validate 2d data fb login through data table",
+        "id": "to-validate-facebook-login-functionalies;",
+        "after": [
+          {
+            "result": {
+              "duration": 159500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aft()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7474911800,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "check login through chrome browser",
+            "match": {
+              "location": "Facebook.check_login_through_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 5, Size: 2\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\r\n\tat java.util.ArrayList.get(ArrayList.java:435)\r\n\tat java.util.Collections$UnmodifiableList.get(Collections.java:1311)\r\n\tat org.demo.Facebook.to_login_userName_and_password(Facebook.java:66)\r\n\tat ✽.To login userName and password(file:src/test/resources/Featuresfile/login.feature:41)\r\n",
+              "duration": 7880500,
+              "status": "failed"
+            },
+            "line": 41,
+            "name": "To login userName and password",
+            "match": {
+              "location": "Facebook.to_login_userName_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "viji",
+                  "pavi",
+                  "prem",
+                  "vimala"
+                ]
+              },
+              {
+                "cells": [
+                  "dhanya",
+                  "shree",
+                  "kgijnm",
+                  "dfjgk"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 879300,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "click login",
+            "match": {
+              "location": "Facebook.click_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@data2d"
+          }
+        ]
+      }
+    ],
+    "name": "To Validate facebook Login Functionalies",
+    "description": "",
+    "id": "to-validate-facebook-login-functionalies",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Featuresfile/login.feature",
+    "tags": []
+  }
+]
